@@ -35,12 +35,12 @@ var candies = [
 router.get('/candies', function(req,res) {
 	res.json(candies);
 });
-/*
+
 router.get('/candies/:id', function(req,res) {
 	var candyId = req.params.id;
 
 res.send(candies[candyId-1]);
-});*/
+});
 
 router.post('/candies', function(req,res) {
 	candies.push(req.body);
